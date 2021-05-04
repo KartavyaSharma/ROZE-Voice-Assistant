@@ -1,0 +1,6 @@
+Date_Time			Backup Name		Note
+=======================================================================================
+20171110_0021		20171110_00		Notification talk scenarios are working and final.
+20171110_0328		20171110_01		Dangerous Speed announcement. Settings not done yet.
+20171110_0853		20171110_02		Settings done and apk prepared for plagiarism check
+=======================================================================================

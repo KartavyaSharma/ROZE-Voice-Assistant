@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*" android:stretchColumns="*" android:background="#ffffff"
+        android:baselineAligned="false">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text="Tap start to wake up ROZE. ROZE will monitor your notifications and read them for you. Press stop to shut down ROZE. You can leave the app and ROZE would still run in the background if you have stated it."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp" android:paddingRight="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal" android:paddingLeft="20dp" android:paddingRight="20dp">
+            <Button
+                android:text="START"
+                android:layout_height="wrap_content" android:id="@+id/buttonStart"
+                android:textSize="25sp"
+                android:focusedByDefault="true" android:focusableInTouchMode="true"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal" android:paddingLeft="20dp" android:paddingRight="20dp">
+            <Button
+                android:text="STOP"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonStop"
+                android:textSize="25sp"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="SETTINGS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textViewSettings"
+                android:textSize="25sp"
+                android:paddingLeft="20dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Speed Limit (K/h)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <TextView
+                    android:text=":    "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextSpeed" android:text="60" android:layout_width="wrap_content"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+                <TextView
+                    android:text="Test Speed (K/h)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <TextView
+                    android:text=":     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="0"
+                    android:text="0" android:layout_width="wrap_content" android:layout_weight="0.94"
+                    android:id="@+id/editTextTestSpeed"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+                <TextView
+                    android:text="Translate notificaiton to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <TextView
+                    android:text="         :           "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <Spinner
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content" android:id="@+id/spinner"
+                    android:spinnerMode="dropdown" android:clipChildren="false" android:layout_weight="0.75"/>
+
+            </LinearLayout>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+                <TextView
+                    android:text="Filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <TextView
+                    android:text="           :             "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="0"
+                    android:text="all" android:layout_width="wrap_content" android:layout_weight="0.94"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="*Translation feature comming soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:text=" "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="ABOUT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="ROZE | Smart Driving Assistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Version: 0.0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Author: Kartavya Sharma | MYP 5A | Choithram International School"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Work: Personal Project For MYP 5 | 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Roze is a smart assistant app for safer driving. Roze helps you stay safe on road by reading notifications for you. Roze also warns you if you overspeed during driving. Start Roze before you start driving. Once your journey is over stop Roze."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="CREDITS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Android Studio ver 2.3.3
+Copyright © 2013-2017 Google
+https://developer.android.com/studio/index.html"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="GIMP - GNU Image Manipulation Tool ver 2.9.6
+Copyright © 1996-2017 GIMP Organisation
+https://www.gimp.org/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Affinity Photo Pro ver 1.6
+Copyright © 2015-2017 Serif
+https://affinity.serif.com/en-gb/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Sanjay Sharma, GPS speed narration module,
+Pilcrow Apps® 2012-2016. All rights reserved.
+http://pilcrowapps.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Sanjay Sharma, Roze - The Intelligent Assistant © Logo,
+Pilcrow Apps® 2012-2016. All rights reserved.
+http://pilcrowapps.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="1">
+
+                <TextView
+                    android:text="Portions of this page are modifications based on work created and shared by the Android Open Source Project
+and used according to terms described in the Creative Commons 2.5 Attribution License."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
+
