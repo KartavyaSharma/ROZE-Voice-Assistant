@@ -7,4 +7,4 @@ ROZE is a voice assistant that is intended for use in driving based contexts. It
 
 The goal with this application was to reduce vehicular accidents caused due to distracted driving.
 
-This is a project I developed as a part of my IB MYP Personal Project in _circa 2018_
+This is a project I developed as a part of my IB MYP Personal Project _circa 2018_
